@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    color: #00FF00;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Atualização do GIF de fundo */
+.overlay {
+    background: url('https://media1.tenor.com/m/I00AYttdTfcAAAAd/mortal-kombat-scorpion.gif') no-repeat center center fixed; /* Novo GIF do Liu Kang */
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.4;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.4; }
+    50% { opacity: 0.6; }
+    100% { opacity: 0.4; }
+}
+
+.container {
+    background-color: rgba(26, 26, 26, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00FF00;
+    max-width: 500px;
+    margin: 50px auto;
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFD700;
+    text-shadow: 0 0 10px #FF0000;
+}
+
+label {
+    margin: 10px 0 5px;
+    display: block;
+    color: #00FF00;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #00FF00;
+    background-color: #333;
+    color: #00FF00;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+
+button#limparBtn {
+    background-color: #FF0000;
+    color: white;
+    box-shadow: 0 0 5px #FF0000;
+}
+
+button[type="submit"] {
+    background-color: #00FF00;
+    color: black;
+    box-shadow: 0 0 5px #00FF00;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+h1 {
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 30px #FF0000, 0 0 40px #FF0000;
+    }
+    to {
+        text-shadow: 0 0 20px #FF0000, 0 0 30px #FF0000, 0 0 40px #FF0000, 0 0 50px #FF0000;
+    }
+}
